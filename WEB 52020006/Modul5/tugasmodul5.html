@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            belajar jquery
+        </title>
+        <script src="jquery-3.6.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+            //$("#tombol").click(function() {
+            //$(this).after('<p> Sedang belajar JQuesrt</p>');
+           // });
+            $("#tombol_hide").click(function() {
+                $("h1").hide();
+            });
+
+            $("#tombol_show").click(function() {
+                $("h1").show();
+            });
+        });
+       </script>
+    </head>
+    <body>
+        <button id="tombol_hide">Sembunyikan</button>
+        <button id="tombol_show">Tampilkan</button>
+        <h1><img src="wppgame.png"></h1>
+    </body>
+</html>

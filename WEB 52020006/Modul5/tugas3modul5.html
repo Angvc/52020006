@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            belajar jquery
+        </title>
+        <script src="jquery-3.6.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+            //$("#tombol").click(function() {
+            //$(this).after('<p> Sedang belajar JQuesrt</p>');
+           // });
+            $("#tombol_hide").click(function() {
+                $("h1").hide();
+            });
+
+            $("#tombol_show").click(function() {
+                $("h1").show();
+            });
+        });
+       </script>
+       <style>
+
+        .box1{
+        width:150px;
+        height:150px;
+        background:yellow;
+        }
+        .box2{
+        width:230px;
+        height:230px;
+        background:yellow;
+        }
+        
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="box1">Ini adalah box 1</div>
+        <div class="box2">Ini adalah box 2</div>
+        <button id="tombol_hide">Sembunyikan</button>
+        <button id="tombol_show">Tampilkan</button>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+p {
+    text-align: center;
+    font-size: 20px;
+}
+#prodi {
+    color: blue;
+    font-size: 40px;
+}
+.kuning {
+    color: yellow;
+}
+.tebal{
+    font-weight: bold;
+}

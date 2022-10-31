@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            belajar jquery
+        </title>
+        <script src="jquery-3.6.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+            $("#k1").dblclick(function() {
+        $(this).css("background","red");
+            });
+        });
+
+       </script>
+       <style>
+
+        div{
+        width:150px;
+        height:150px;
+        background:yellow;
+        display: inline-flex;
+        }
+        </style>
+        
+    </head>
+    <body>
+        
+       <div id="k1"></div>
+       <div id="k2"></div>
+        <div id="k3"></div>
+        <div id="k4"></div>
+    
+
+    </body>
+</html>

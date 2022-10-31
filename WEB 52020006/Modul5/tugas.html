@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            belajar jquery
+        </title>
+        <script src="jquery-3.6.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+                $("#tombol").click(function(){
+                var nama = $("#nama").val();
+                var alamat = $("#alamat").val();
+                var hobi = new Array();
+                $("input[name='hobby']:checked").each(function() {
+                });
+                alert(name+" "+address+" "+hobi);
+                    });
+                });
+            </script>
+        </head>
+        <body>
+            <form>
+           <label for="name">Nama:</label><br>
+           <input type="text" id="name" name="Name"><br>
+           <label for="address">Alamat:</label><br>
+           <input type="text" id="address" name="address">
+           <p> Hobi :</p>
+            <input name="hobi" id="olahraga" type="checkbox" value="olahraga" />
+            <label for="olahraga">olahraga</label>
+            <input name="hobi" id="menggambar" type="checkbox" value="menggambar" />
+            <label for="menggambar">menggambar</label>
+            <input name="hobi" id="menulis" type="checkbox" value="menulis" />
+            <label for="menulis">menulis</label>
+            <p>
+                <button id="tombol">Masukkan</button>
+            </p>
+
+        </form>   
+
+    </body>
+    
+</html>

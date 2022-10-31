@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            latihan2 modul 4
+        </title>
+        <script type="text/javascript">
+        function hitung(op){
+            
+            var bil1 = parseInt (document.calc.bil1.value);
+            var bil2 = parseInt (document.calc.bil2.value);
+            var hasil = 0;
+            if (op == '+') hasil = bil1+bil2;
+            else if (op == '-') hasil = bil1-bil2;
+            else if (op == '*') hasil = bil1*bil2;
+            else if (op == '/') hasil = bil1/bil2;
+            document.calc.hasil.value = hasil;
+        }
+        </script>
+    </head>
+    <body>
+        <form name="calc">
+        <p>Bilangan 1</p>
+        <p><input type="text" name="bil1"></p>
+        <p>Bilangan 2</p>
+        <p><input type="text" name="bil2"></p>
+        <p>
+            <input type="button" value="+" onclick="hitung('+')">
+            <input type="button" value="-" onclick="hitung('-')">
+            <input type="button" value="*" onclick="hitung('*')">
+            <input type="button" value="/" onclick="hitung('/')">
+        </p>
+        <p>Hasil</p>
+        <p><input type="text" name="hasil"></p>
+    </form>
+    </body>
+</html>

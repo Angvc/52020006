@@ -1,0 +1,39 @@
+<html>
+    <head><script type="text/javascript">
+        var angka = bilacak(1,100);
+        var coba = 0;
+    function bilacak (min, max) {
+    return Math.floor(min + Math.random() *
+    (max - min + 1))
+    }
+    function cek() {
+        coba++;
+    var tebak = parseInt (document.tebak.bil.value);
+    if (tebak == angka);
+        alert("Tebakan Anda benar. Dalam "+coba+" kali");
+    else if (tebak > angka)
+        alert ("Terlalu Besar.")
+    else
+        alert ("Terlalu kecil.")
+    }
+    </script>
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function cek( {
+    var tebak = parentInt (document.bil.tebak)
+    if (tebak == angka)
+
+alert("tebak anda  benar")})
+    </head>
+    <body>
+        <p>
+            Tebakan anda :<br/>
+            <form name="tebak">
+            <input type="text" name="bil"><br>
+            <input type="buttom" value="cek" onclick="cek();">
+        </form>
+        </p>
+    </body>
+</html>

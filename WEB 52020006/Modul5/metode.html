@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            belajar jquery
+        </title>
+        <script src="jquery-3.6.1.js"> </script>
+        <script>
+            $(document).ready(function() {
+
+                $("#tombol").click(function() {
+                    var nilai = $("#paragraf").text();
+                    alert(nilai);
+                })
+            });
+            </script>
+        </head>
+        <body>
+            <p id="paragraf">
+                sedang belajar <b>jquery</b>
+            </p>
+            <button id="tombol">Ambil Nilai</button>
+        </body>
+</html>
